@@ -1,9 +1,5 @@
 class Admin::WorksController < Admin::AdminController
   
-  rescue_from ActiveRecord::RecordInvalid do |exception|
-    render :action => exception.record.new_record? ? "new" : "edit"
-  end
-  
   def index
     @works = Work.all
   end
@@ -22,9 +18,14 @@ class Admin::WorksController < Admin::AdminController
   
   def create
     @work = Work.new(params[:work])
-    @work.save!
-    flash[:notice] = "Work Created"
-    redirect_to admin_work_path(@work)
+    respond_to do |format|
+      if @work.save
+        flash[:notice] = "Author created."
+        format.html { redirect_to admin_works_path }
+      else
+        format.html { render :action => "new" }
+      end
+    end
   end
   
   def update

@@ -1,0 +1,12 @@
+html { overflow-y:auto; }
+body { background:#fff; }
+#page-wrap { width:1080px; overflow:hidden; margin:0 auto; }
+h1 { background:url('../images/header.jpg') no-repeat; width:1080px; height:346px; float:left; }
+h1 a, p#contact a { height:100%; display:block; text-indent:-9999px; }
+p#contact { height:34px; width:99px; background:url('../images/contact.gif'); float:right; }
+
+#content { width:100%; overflow:hidden; padding-top:20px; }
+#content .work { width:340px; height:340px; background:#fff; float:left; margin:0 22px 20px 0; overflow:hidden; border:2px solid #C1C1C1;}
+#content .work.third {margin-right:0px; }
+#content .work a { display:block; padding:15px; height:290px; width:290px; overflow:hidden; }
+#content .work img { }

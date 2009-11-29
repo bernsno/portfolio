@@ -1,0 +1,236 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      font-size: 11px;
+    }
+
+    a { color: #000; }
+    a:visited { color: #666; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  NameError
+  
+    in Admin/worksController#new
+  
+</h1>
+<pre>undefined local variable or method `new_user_session_url' for #&lt;Admin::WorksController:0x2ab3c20&gt;</pre>
+
+
+
+<p><code>RAILS_ROOT: /usr/local/projects/portfolio</code></p>
+
+<div id="traces">
+  
+    
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+  
+    
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+  
+    
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+  
+
+  
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>/usr/local/projects/portfolio/app/controllers/application_controller.rb:25:in `require_user'</code></pre>
+    </div>
+  
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:178:in `send'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:178:in `evaluate_method'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:166:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:225:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:629:in `run_before_filters'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:615:in `call_filters'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lint.rb:47:in `_call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lint.rb:35:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:320:in `process'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:196:in `get'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:498:in `__send__'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:498:in `get'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/rails.rb:68:in `send'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/rails.rb:68:in `do_request'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/rails.rb:37:in `get'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:280:in `send'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:280:in `process_request'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:122:in `request_page'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:220:in `visit'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:369:in `call'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:369:in `run_current_setup_blocks'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:368:in `each'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:368:in `run_current_setup_blocks'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:350:in `test: a non-admin visiting admin section should return to new user session path. '
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/testing/setup_and_teardown.rb:62:in `__send__'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:652:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit.rb:278
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5</code></pre>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>/usr/local/projects/portfolio/app/controllers/application_controller.rb:25:in `require_user'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:178:in `send'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:178:in `evaluate_method'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:166:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:225:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:629:in `run_before_filters'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:615:in `call_filters'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lint.rb:47:in `_call'
+/usr/local/projects/portfolio/vendor/gems/rack-1.0.0/lib/rack/lint.rb:35:in `call'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:320:in `process'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:196:in `get'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:498:in `__send__'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:498:in `get'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/rails.rb:68:in `send'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/rails.rb:68:in `do_request'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/rails.rb:37:in `get'
+(__FORWARDABLE__):3:in `__send__'
+(__FORWARDABLE__):3:in `get'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:280:in `send'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:280:in `process_request'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:122:in `request_page'
+/usr/local/projects/portfolio/vendor/gems/webrat-0.5.3/lib/webrat/core/session.rb:220:in `visit'
+(eval):2:in `visit'
+test/integration/admin/works_controller_test.rb:5:in `__bind_1259524782_374954'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:369:in `call'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:369:in `run_current_setup_blocks'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:368:in `each'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:368:in `run_current_setup_blocks'
+/usr/local/projects/portfolio/vendor/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:350:in `test: a non-admin visiting admin section should return to new user session path. '
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/testing/setup_and_teardown.rb:62:in `__send__'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb:652:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/1.8/test/unit.rb:278
+/opt/ruby-enterprise-1.8.6-20081205/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5</code></pre>
+    </div>
+  
+</div>
+
+
+
+
+
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+
+
+</body>
+</html>
