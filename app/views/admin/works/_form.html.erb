@@ -1,5 +1,8 @@
-<% f.inputs do -%>
-  <%= f.input :title -%>
-  <%= f.input :image -%>
+<% semantic_form_for [:admin, @work], :html => { :multipart => true } do |f| -%>
+  <% f.inputs do -%>
+    <%= f.input :title -%>
+    <%= f.input :image -%>
+    <%= f.input :category, :as => :select, :collection => Category.all.map { |c| [c.name, c.id] } -%>
+  <% end -%>
+  <%= f.buttons -%>
 <% end -%>
-<%= f.buttons -%>
