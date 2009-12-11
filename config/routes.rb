@@ -9,5 +9,6 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.root :controller => 'works'
     admin.resources :works
+    admin.resources :categories
   end
 end
