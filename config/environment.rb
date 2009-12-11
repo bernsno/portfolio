@@ -9,7 +9,7 @@ Rails::Initializer.run do |config|
   config.gem 'ryanb-acts-as-list', :lib => 'acts_as_list', :source => 'http://gems.github.com'
   config.gem 'justinfrench-formtastic', :lib => 'formtastic', :source => 'http://gems.github.com'  
   config.gem "authlogic"
-  
+  config.gem "giraffesoft-resource_controller", :lib => "resource_controller", :version => '>= 0.6.5'
   config.gem 'rack', :version => '>= 1.0.0'
 
   config.time_zone = 'UTC'
