@@ -9,3 +9,4 @@ tmp/restart.txt
 public/uploaded_files/
 config/application.yml
 public/images/pretty_text/*
+public/system/*
