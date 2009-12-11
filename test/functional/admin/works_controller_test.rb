@@ -25,12 +25,6 @@ class Admin::WorksControllerTest < ActionController::TestCase
     should_render_template :new
     should_not_set_the_flash
   end
-  
-  context "POST to :create" do
-    setup { post :create, :work => Factory.attributes_for(:work) }
-    should_assign_to :work
-    should_change 'Work.count', :by => 1
-  end
     
   context "GET to :edit" do
     setup {get :edit, :id => @work.id}      
@@ -38,13 +32,6 @@ class Admin::WorksControllerTest < ActionController::TestCase
     should_respond_with :success
     should_render_template :edit
     should_not_set_the_flash
-  end
-    
-  context "PUT to :update" do
-    setup {put :update, :id => @work.id, :work => { :title => "Big Painting" }}
-    should_redirect_to("admin work show page") {admin_work_path(assigns(:work))}
-    should_assign_to :work
-    should_set_the_flash_to /update/i
   end
     
   context "destroy" do

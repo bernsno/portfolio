@@ -4,4 +4,5 @@ class Work < ActiveRecord::Base
   validates_attachment_presence :image
   acts_as_list
   default_scope :order => 'position ASC'
+  belongs_to :category
 end
