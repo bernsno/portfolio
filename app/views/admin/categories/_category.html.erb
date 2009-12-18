@@ -1,1 +1,4 @@
-<%= category.name -%>
+<tr id="<%= dom_id(category) %>">
+  <td><%= category.name -%></td>
+  <td><%= link_to 'edit', edit_admin_category_path(category) -%></td>
+</tr>

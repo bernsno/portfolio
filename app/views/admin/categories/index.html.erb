@@ -1,4 +1,15 @@
+<h2>Categories</h2>
 
-<ul>
-  <%= render @categories -%>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @categories -%>
+  </tbody>
+</table>
+
+<%= link_to("Add New Category", new_admin_category_path) -%>

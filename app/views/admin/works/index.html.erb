@@ -1,4 +1,17 @@
+<h2>Work</h2>
 
-<ul>
-  <%= render @works -%>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Thumb</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @works -%>
+  </tbody>
+</table>
+
+<%= link_to("Add New Work", new_admin_work_path) -%>
