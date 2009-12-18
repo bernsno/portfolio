@@ -2,6 +2,6 @@
   <td class="drag_handle">&raquo;</td>
   <td><%= image_tag work.image(:small) -%></td>
   <td><%= work.title -%></td>  
-  <td><%= work.category.name  -%></td>
+  <td><%= work.category.name  unless work.category.nil? -%></td>
   <td><%= link_to 'edit', edit_admin_work_path(work) -%></td>
 </tr>
